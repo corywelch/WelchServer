@@ -51,7 +51,7 @@ var DATA = {
 */ 
 
 var app = express();
-var server = http.createServer(app);
+var server = HTTP.createServer(app);
 
 /*
 ** ||----------------||
@@ -112,22 +112,38 @@ function serverStartup() {
     updateServerStatus();
     setTimeout(function () {
         console.log('All Startup Procedues Done');
-        server.listen(port);
+        server.listen(PORT);
         console.log("Listening on port "+PORT);
     }, 2000);
 }
 
 /*
-** ||-------------||
-** || Main Server ||
-** ||-------------||
+** ||-----------------||
+** || Cory Welch Site ||
+** ||-----------------||
 */ 
 
-var mainRoutes = express.Router();
+var coryRoutes = express.Router();
 
-mainRoutes.get('/', function (req, res){
-	res.sendFile(PATH.join(__dirname,'public','index.html'));
-}
+coryRoutes.get('/', function (req, res){
+	res.sendFile(PATH.join(__dirname,'public','views','index.html'));
+});
+
+app.use('/', coryRoutes);
+
+/*
+** ||--------------||
+** || Server Pages ||
+** ||--------------||
+*/ 
+
+var serverRoutes = express.Router();
+
+serverRoutes.get('/', function (req, res){
+	res.sendFile(PATH.join(__dirname,'public','views','server.html'));
+});
+
+app.use('/server', serverRoutes);
 
 
 /*
