@@ -1,0 +1,17 @@
+Welch Local DNS Server
+
+Cory Welch
+corywelch.ca
+https://github.com/corywelch
+
+Master
+- Contains most up to date configuration files\
+
+amhosts: clone from https://github.com/StevenBlack/hosts adware+malware 2018-05-28
+lanhosts: host file generated for local addresses within the house. Will generally be pretty empty.
+dnsmasq.conf: clone from https://github.com/stephen-mw/raspberrypi/tree/master/roles but edited for my needs
+
+makehost.sh: downloads and combines the hosts files from the net, then restarts the nscd service
+
+setupdnsmasq.sh: installs dnsmasq and runs the updatednsmasq.sh script
+updatednsmasq.sh: downloads master dnsmasq.conf file, backs up old applies and restart
