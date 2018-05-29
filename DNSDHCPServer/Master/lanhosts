@@ -4,5 +4,15 @@
 # corywelch.ca
 # https://github.com/corywelch
 
+192.168.0.1 modem.welch.home modem
+192.168.0.1 hiron hitronrouter hitron.welch.home hitronrouter.welch.home
+192.168.0.1 router1 router1.welch.home
 
-127.0.0.1 raspberrypi
+192.168.0.2 tplink tplinkrouter tplinkarcher tplink.welch.home tplinkrouter.welch.home tplinkarcher.welch.home
+192.168.0.2 router2 router2.welch.home
+
+192.168.0.10 raspberrypi rpi pi raspberrypi.welch.home rpi.welch.home pi.welch.home
+192.168.0.10 dnsmasq dns dnsserver dnsmasq.welch.home dns.welch.home dnsserver.welch.home
+192.168.0.10 dhcp dhcpserver dhcp.welch.home dhcpserver.welch.home
+
+192.168.0.15 printer brotherprinter printer.welch.home brotherprinter.welch.home
