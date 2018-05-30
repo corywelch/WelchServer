@@ -6,8 +6,6 @@
 # corywelch.ca
 # https://github.com/corywelch
 
-service dnsmasq stop
-
 cp /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
 rm /etc/dnsmasq.conf
 
