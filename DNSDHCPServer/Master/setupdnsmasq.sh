@@ -17,4 +17,7 @@ fi
 
 apt-get install -y dnsmasq
 
-/home/pi/config/updatednsmasq.sh
+curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/dsnmasq.conf > /home/pi/config/dnsmasq.conf
+cp /home/pi/config/dnsmasq.conf /etc/dnsmasq.conf
+
+service dnsmasq restart
