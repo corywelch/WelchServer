@@ -7,7 +7,6 @@
 # https://github.com/corywelch
 
 cp /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
-rm /etc/dnsmasq.conf
 
 curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/dsnmasq.conf > /home/pi/config/dnsmasq.conf
 cp /home/pi/config/dnsmasq.conf /etc/dnsmasq.conf
