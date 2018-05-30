@@ -4,6 +4,8 @@
 # corywelch.ca
 # https://github.com/corywelch
 
-curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/lanhosts > /home/pi/config/lanhosts
-curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/amhosts > /home/pi/config/amhosts
-curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/dsnmasq.conf > /home/pi/config/dnsmasq.conf
+# https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/updatescripts.sh
+
+curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/makehosts.sh > /home/pi/config/makehosts.sh
+curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/setupdnsmasq.sh > /home/pi/config/setupdnsmasq.sh
+curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServer/Master/updatedsnmasq.sh > /home/pi/config/updatednsmasq.sh
