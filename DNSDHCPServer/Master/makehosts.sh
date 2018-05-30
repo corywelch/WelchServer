@@ -11,4 +11,4 @@ curl https://raw.githubusercontent.com/corywelch/WelchServer/master/DNSDHCPServe
 
 cat /home/pi/config/lanhosts /home/pi/config/amhosts > /etc/hosts
 
-/etc/rc.d/init.d/nscd restart
+service networking restart
